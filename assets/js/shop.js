@@ -30,7 +30,7 @@ var firebaseConfig = {
                                         data-item-id='${styles[i].style}'
                                         data-item-name='${styles[i].name}'
                                         data-item-price='20'
-                                        data-item-url='/prices.html'
+                                        data-item-url='https://onaseer87.github.io/Ambassador/prices.html'
                                         data-item-description='${styles[i].description}'
                                     >
                                         <img class="img-fluid" src="assets/images/products/${styles[i].style}.jpg" 
