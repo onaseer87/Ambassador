@@ -1,6 +1,9 @@
 body {
     background: #444;
 }
+.hidden-lg {
+    display:none;
+}
 #submit{
     outline: none;
     background:#91c5c3;
@@ -13,7 +16,7 @@ body {
     color:#91c5c3;
     background:#444;
 }
-button{
+#signout{
     outline: none;
     background:#91c5c3;
     color:#444;
@@ -21,7 +24,7 @@ button{
     border-radius: .1rem;
     transition: all .3s ease-in-out;
 }
-button:hover{
+.signout:hover{
     color:#91c5c3;
     background:#444;
 }
@@ -29,57 +32,75 @@ button:hover{
     cursor: pointer;
     font-size: larger;
 }
+.thumbnails {
+    border: 0px !important; 
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
 
+/*Swatch Colors*/
 .APPL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #b2d235;
 }
 .AQMA {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #09a8ac;
 }
 .ARBL {
+    height: 1rem;
     width: 1rem;
     border-radius: 100%;
     border: 0;
     background: #4bc3c9;
 }
 .BLAC {
+    outline: none;
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: black;
 }
 .BLUH {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #91A6CA;
 }
 .CARI {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #114160;
 }
 .CEIL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #6768a9;
 }
 .CHAR {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #39373c;
 }
 .CHOC {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #34251e;
@@ -87,114 +108,133 @@ button:hover{
 
 .CLOD {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #d1d3d4;
 }
 .CRAL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #e95c5f;
 }
 .CTNC {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #e54f96;
 }
 .EGPL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #412044;
 }
 .GELO {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #addab7;
 }
 .GLXY {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #2d2c72;
 }
 .GRAP {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #533b77;
 }
 .HNTR {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #114d41;
 }
 .KHAK {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #beab97;
 }
 .LOLI {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #d180b5;
 }
 .MGNT {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #98258f;
 }
 .NAVY {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #232d54;
 }
 .OLIV {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #504f34;
 }
 .PACI {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #1a97d4;
 }
 .PKLC {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #c12578;
 }
 .PKPH {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #d11a70;
 }
 .PLUM {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #4b2c6f;
 }
 .PPHZ {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #b88fc1;
 }
 .PWTR {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #57565a;
@@ -202,6 +242,7 @@ button:hover{
 }
 .RASP {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #b22a88;
@@ -209,6 +250,7 @@ button:hover{
 }
 .RHUB {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #911e60;
@@ -216,6 +258,7 @@ button:hover{
 }
 .REDD {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #c42127;
@@ -223,54 +266,63 @@ button:hover{
 }
 .RLTL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #0b8488;
 }
 .ROYL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #30408e;
 }
 .SKYB {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #39bced;
 }
 .SLAT {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #585B5F;
 }
 .SPMN {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #00b8a2;
 }
 .STEL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #585B5F;
 }
 .TEAL {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #0b8488;
 }
 .TURQ {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #00B5E3;
 }
 .WHIT {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 1px solid;
     border-color: #cccccc!important;
@@ -278,6 +330,7 @@ button:hover{
 }
 .WINE {
     width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     border: 0;
     background: #4e0d30;
