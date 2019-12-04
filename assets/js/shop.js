@@ -431,9 +431,10 @@ var generateItemsHtml = function() {
                                         <button class="snipcart-add-item"
                                         data-item-id="${styles[i].style}"
                                         data-item-name="${styles[i].name}"
-                                        data-item-price="40.00"
-                                        data-item-url="https://onaseer87.github.io/medcoutureTest/test.html"
+                                        data-item-price="20.00"
+                                        data-item-url="https://onaseer87.github.io/Ambassador/prices.html"
                                         data-item-description="${styles[i].description}"
+                                        data-item-image="./assets/images/products/${styles[i].style}.jpg"
                                         >Add to Cart</button>
                                     </div>
                                 </div>
