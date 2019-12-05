@@ -87,6 +87,12 @@ var styles = [
         kind: 'touch',
         features: ['Henley neck', 'Chest patch pocket', 'Back yoke with box pleat', 'Inside contrast neckband', 'R: XS-2X (26”)'],
         swatches: ['BLAC', 'BLUH', 'NAVY', 'SLAT'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -112,6 +118,12 @@ var styles = [
         kind: 'touch',
         features: ['Straight leg with side vents', 'Rib knit waist and pocket lining', '1 cargo pocket', 'Two back patch pockets', 'R: XS-3X (31”) P XS-XL (29”) T XS-XL (33”)'],
         swatches: ['BLAC', 'BLUH', 'NAVY', 'ROYL', 'SLAT'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -137,6 +149,12 @@ var styles = [
         kind: 'touch',
         features: ['Mock wrap v-neckline', 'Double-layered angled pockets', 'Accessory loop', 'Inside contrast neckband', 'Back princess seams', 'R: XS-3X (26”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -162,6 +180,12 @@ var styles = [
         kind: 'touch',
         features: ['Single cargo pocket', 'Rib knit waistband and ankle cuffs', 'Adjustable front waist ties', 'Accessory loop', 'Two back patch pockets', 'R: XS-3X (28 1/2”) P XS-XL (26 1/2”) T XS-XL (31”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE', 'WHIT'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -187,6 +211,12 @@ var styles = [
         kind: 'touch',
         features: ['Overlapping rib knit side panels', 'Accessory loop', 'Extra accessory pocket and pen slot', 'Two large patch pockets', 'Two back patch pockets', ' Inside contrast neckband', 'R: XS-5X (27”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE', 'WHIT'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -212,12 +242,27 @@ var styles = [
         kind: 'touch',
         features: ['Straight leg with side vents', 'Jacquard elastic and rib knit waistband', 'Internal waist ties', 'Two cargo, two back patch ', 'Two back patch pockets', 'Extra accessory pocket', 'Accessory loop', 'R: XS-5X (31”) P XS-2X (29”) T XS-XL (33”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
                 $('#swatches').append(`
                     <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
                 `)
+            }
+        },
+        listFeatures: function () {
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++) {
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
             }
         }
     },
@@ -228,6 +273,12 @@ var styles = [
         kind: 'activate',
         features: ['Back knit racerback panel', 'Shoulder yokes', 'Two large patch pockets', 'Extra accessory pockets', 'Hidden side seam pockets', 'R: XS-3X (26”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'GLXY', 'HNTR', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'RLTL', 'ROYL', 'SKYB', 'SPMN', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -255,6 +306,12 @@ var styles = [
         kind: 'activate',
         features: ['Shoulder princess seams', 'Two large patch pockets', 'Extra accessory pockets', 'Snap closure', 'R: XS-3X (26”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'GLXY', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'ROYL', 'TEAL', 'SKYB', 'SPMN', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -282,6 +339,12 @@ var styles = [
         kind: 'activate',
         features: ['Boot cut leg with side vents', 'Jacquard elastic and knit waistband', 'Two cargo pockets', 'Single back patch pocket', 'R: XS-3X (31”) | P: XS-XL (29”) | T: XS-XL (33”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'GLXY', 'HNTR', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'RLTL', 'ROYL', 'SKYB', 'SPMN', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -309,6 +372,12 @@ var styles = [
         kind: 'activate',
         features: ['Roomy straight leg', 'Stretchy knit waistband', 'Single cargo zipper pocket', 'Single back patch pocket', 'R: XS-3X (31”) | P: XS-XL (29”) | T: XS-XL (33”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'GLXY', 'HNTR', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'RLTL', 'ROYL', 'SKYB', 'SPMN', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -336,6 +405,12 @@ var styles = [
         kind: 'activate',
         features: ['Comfortable side knit panels', 'Adjustable bungee with toggle', 'Two large patch pockets', 'Classic v-neckline', 'R: XS-3X (27”)'],
         swatches: ['BLAC', 'NAVY', 'PWTR', 'ROYL', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -363,6 +438,12 @@ var styles = [
         kind: 'activate',
         features: ['Boot cut leg with side vents', 'Comfortable knit waist pane', 'Single cargo pocket', 'Single back welt pocket', 'R: XS-3X (30”) | P: XS-XL (29”)'],
         swatches: ['BLAC', 'NAVY', 'PWTR', 'ROYL', 'WINE'],
+        listColors: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}
+            `);
+
+        },
         appendSwatches: function () {
             for (let i = 0; i < this.swatches.length; i++) {
                 let swatches = this.swatches[i];
@@ -429,12 +510,14 @@ var generateItemsHtml = function() {
                                     </div>
                                     <div class="col-md-12 mt-3 d-flex justify-content-center">
                                         <button class="snipcart-add-item"
+                                        data-item-max-quantity="1"
                                         data-item-id="${styles[i].style}"
                                         data-item-name="${styles[i].name}"
                                         data-item-price="20.00"
                                         data-item-url="https://onaseer87.github.io/Ambassador/prices.html"
                                         data-item-description="${styles[i].description}"
                                         data-item-image="./assets/images/products/${styles[i].style}.jpg"
+                                        data-item-custom1-name="Select Color"        
                                         >Add to Cart</button>
                                     </div>
                                 </div>
@@ -445,6 +528,7 @@ var generateItemsHtml = function() {
             `)
             styles[i].listFeatures();
             styles[i].appendSwatches();
+            styles[i].listColors();
         }
 
     }
