@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,36 +32,25 @@
         <!-- Add Firebase products that you want to use -->
         <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
-</head>
+        <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZmY5ZjlmZTUtMTc5My00YzUyLWE1ODQtN2Y2ZDFiNDc1NjhmNjM3MDE0NzY4Njg0NjI4ODM4"></script>
+        <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+        
+    </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4 shadow-sm p-3 mt-3 bg-white">
-                <img src="assets/images/logo.png" alt="Medcouture.com Logo" class="img-fluid">
 
-                <form>
-                    <div class="md-form">
-                        <input type="email" id="email" class="form-control">
-                        <label for="email">E-mail address</label>
-                    </div>
-                    <div class="md-form">
-                        <input type="password" id="password" class="form-control">
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <input class="p-2" type="submit" id="submit" value="Sign In">
-                    </div>
-                </form>
-                
-            </div>
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-12 text-center text-white" id="message"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <a href="shop.html" alt="shop" class="text-center text-white">Back to Shop</a>
+            <div class="col-md-12 d-flex justify-content-end align-items-center p-2"><span class="text-white p-2" id="email-label"></span><span id="snipcart-checkout" class="p-2 text-white mr-2 snipcart-checkout"><i class="fas fa-shopping-cart snipcart-checkout"></i></span><button id="signout">SignOut</button></div>
+            <div class="col-md-12 text-white text-center"><h1 class="text-white text-uppercase display-1">Touch</h1></div>
         </div>
-    </div>  
-    <script src="assets/js/main.js"></script>
+    </div>
+
+    <div id="view" class="bg-white container">
+    </div>
+
+    <script src="./assets/js/shop.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

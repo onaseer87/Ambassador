@@ -1,9 +1,6 @@
 body {
     background: #444;
 }
-.hidden-lg {
-    display:none;
-}
 #submit{
     outline: none;
     background:#91c5c3;
@@ -39,7 +36,13 @@ body {
 button:focus {
     outline: none;
 }
+.swatches {
+    width:1rem;
+    border-radius:100%;
+    border:0;
+    background: #eeee;
 
+}
 /*Swatch Colors*/
 .APPL {
     width: 1rem;
@@ -334,4 +337,16 @@ button:focus {
     border-radius: 100%;
     border: 0;
     background: #4e0d30;
+}
+
+@media (min-width: 576px) {
+    .hidden-lg {
+        display: none!important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hidden-sm {
+        display: none!important;
+    }
 }

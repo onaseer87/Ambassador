@@ -46,8 +46,8 @@ firebase.auth().onAuthStateChanged(function (user) {
             if (styles[i].kind === 'touch') {
                 generateProducts('.touch', styles[i].style, styles[i].name)
             }
-            if (styles[i].kind === 'activate') {
-                generateProducts('.activate', styles[i].style, styles[i].name)
+            if (styles[i].kind === 'energy') {
+                generateProducts('.energy', styles[i].style, styles[i].name)
             }
         }
 
@@ -87,7 +87,7 @@ var styles = [
         kind: 'touch',
         features: ['Henley neck', 'Chest patch pocket', 'Back yoke with box pleat', 'Inside contrast neckband', 'R: XS-2X (26”)'],
         swatches: ['BLAC', 'BLUH', 'NAVY', 'SLAT'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}
             `);
@@ -118,7 +118,7 @@ var styles = [
         kind: 'touch',
         features: ['Straight leg with side vents', 'Rib knit waist and pocket lining', '1 cargo pocket', 'Two back patch pockets', 'R: XS-3X (31”) P XS-XL (29”) T XS-XL (33”)'],
         swatches: ['BLAC', 'BLUH', 'NAVY', 'ROYL', 'SLAT'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}
             `);
@@ -149,7 +149,7 @@ var styles = [
         kind: 'touch',
         features: ['Mock wrap v-neckline', 'Double-layered angled pockets', 'Accessory loop', 'Inside contrast neckband', 'Back princess seams', 'R: XS-3X (26”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}
             `);
@@ -180,7 +180,7 @@ var styles = [
         kind: 'touch',
         features: ['Single cargo pocket', 'Rib knit waistband and ankle cuffs', 'Adjustable front waist ties', 'Accessory loop', 'Two back patch pockets', 'R: XS-3X (28 1/2”) P XS-XL (26 1/2”) T XS-XL (31”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE', 'WHIT'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}
             `);
@@ -211,7 +211,7 @@ var styles = [
         kind: 'touch',
         features: ['Overlapping rib knit side panels', 'Accessory loop', 'Extra accessory pocket and pen slot', 'Two large patch pockets', 'Two back patch pockets', ' Inside contrast neckband', 'R: XS-5X (27”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE', 'WHIT'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}
             `);
@@ -242,7 +242,7 @@ var styles = [
         kind: 'touch',
         features: ['Straight leg with side vents', 'Jacquard elastic and rib knit waistband', 'Internal waist ties', 'Two cargo, two back patch ', 'Two back patch pockets', 'Extra accessory pocket', 'Accessory loop', 'R: XS-5X (31”) P XS-2X (29”) T XS-XL (33”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}
             `);
@@ -273,7 +273,7 @@ var styles = [
         kind: 'activate',
         features: ['Back knit racerback panel', 'Shoulder yokes', 'Two large patch pockets', 'Extra accessory pockets', 'Hidden side seam pockets', 'R: XS-3X (26”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'GLXY', 'HNTR', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'RLTL', 'ROYL', 'SKYB', 'SPMN', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
             `);
@@ -306,7 +306,7 @@ var styles = [
         kind: 'activate',
         features: ['Shoulder princess seams', 'Two large patch pockets', 'Extra accessory pockets', 'Snap closure', 'R: XS-3X (26”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'GLXY', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'ROYL', 'TEAL', 'SKYB', 'SPMN', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}
             `);
@@ -339,7 +339,7 @@ var styles = [
         kind: 'activate',
         features: ['Boot cut leg with side vents', 'Jacquard elastic and knit waistband', 'Two cargo pockets', 'Single back patch pocket', 'R: XS-3X (31”) | P: XS-XL (29”) | T: XS-XL (33”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'GLXY', 'HNTR', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'RLTL', 'ROYL', 'SKYB', 'SPMN', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
             `);
@@ -372,7 +372,7 @@ var styles = [
         kind: 'activate',
         features: ['Roomy straight leg', 'Stretchy knit waistband', 'Single cargo zipper pocket', 'Single back patch pocket', 'R: XS-3X (31”) | P: XS-XL (29”) | T: XS-XL (33”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'GLXY', 'HNTR', 'NAVY', 'OLIV', 'PKPH', 'PLUM', 'PWTR', 'REDD', 'RLTL', 'ROYL', 'SKYB', 'SPMN', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
             `);
@@ -405,7 +405,7 @@ var styles = [
         kind: 'activate',
         features: ['Comfortable side knit panels', 'Adjustable bungee with toggle', 'Two large patch pockets', 'Classic v-neckline', 'R: XS-3X (27”)'],
         swatches: ['BLAC', 'NAVY', 'PWTR', 'ROYL', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}
             `);
@@ -438,7 +438,7 @@ var styles = [
         kind: 'activate',
         features: ['Boot cut leg with side vents', 'Comfortable knit waist pane', 'Single cargo pocket', 'Single back welt pocket', 'R: XS-3X (30”) | P: XS-XL (29”)'],
         swatches: ['BLAC', 'NAVY', 'PWTR', 'ROYL', 'WINE'],
-        listColors: function() {
+        listCartData: function() {
             $('.snipcart-add-item').attr('data-item-custom1-options',`
             ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}
             `);
@@ -463,7 +463,141 @@ var styles = [
                 )
             }
         }
-    }
+    },
+    {
+        style: 8579,
+        name: 'RACERBACK SHIRTTAIL TOP',
+        description:"This scrub top offers you a comfy and breathable fit. A v-neckline and a fun racerback design make for a classic sporty look.",
+        kind: 'energy',
+        features:['Racerback knit panel','Front and back princess seams','Two large patch pockets','Welt accessory pocket','R: XS-5X (front 27” back 26”)'],
+        swatches:['BLAC','CARI','CEIL','CHOC','CRAL','EGPL','GLXY','HNTR','NAVY','PLUM','PWTR','REDD','ROYL','TEAL','TURQ','WINE','WHIT'],
+        listCartData: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+            $('.snipcart-add-item').attr('data-item-custom2-options',this.features[this.features.length-1]);
+        },
+        appendSwatches: function(){
+            for (let i = 0; i < this.swatches.length; i++){
+                let swatches = this.swatches[i];
+                $('#swatches').append(`
+
+                    <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
+
+                `)
+            }
+        },
+        listFeatures: function(){
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++){
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
+            }
+        }
+    },
+    {
+        style: 8744,
+        name: 'YOGA 2 CARGO POCKET PANT',
+        description:"Designed for comfort and built to perform on the job and beyond! This yoga style scrub pant offers a comfortable drawstring waistband and two cargo pockets.",
+        kind: 'energy',
+        features:['Boot cut leg with side vents','Sporty yoga knit waistband','Internal waist ties','Two welt cargo pockets','Two back patch pockets','R: XS-5X (31”) | P: XS-2X (29”) | T: XS-2X (33”)'],
+        swatches:['BLAC','CARI','CEIL','CHOC','CRAL','EGPL','GLXY','HNTR','NAVY','PLUM','PWTR','REDD','ROYL','TEAL','TURQ','WINE','WHIT'],
+        listCartData: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+            $('.snipcart-add-item').attr('data-item-custom2-options',this.features[this.features.length-1]);
+        },
+        appendSwatches: function(){
+            for (let i = 0; i < this.swatches.length; i++){
+                let swatches = this.swatches[i];
+                $('#swatches').append(`
+
+                    <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
+
+                `)
+            }
+        },
+        listFeatures: function(){
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++){
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
+            }
+        }
+    },
+    {
+        style: 8587,
+        name: 'V-NECK 3 POCKET TOP',
+        description:"This v-neck scrub top feels sporty while exhibiting a traditional appeal. Crafted from a sleek and lightweight fabric, includes a chest pocket for expanded storage.",
+        kind: 'energy',
+        features:['Chest patch pocket','Two large welt pockets','R: XS-3X ( 26”)'],
+        swatches:['BLAC','CARI','CEIL','CHOC','CRAL','EGPL','GLXY','HNTR','NAVY','PLUM','PWTR','REDD','ROYL','TEAL','TURQ','WINE','WHIT'],
+        listCartData: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+            
+            $('.snipcart-add-item').attr('data-item-custom2-options',this.features[this.features.length-1]);
+        },
+        appendSwatches: function(){
+            for (let i = 0; i < this.swatches.length; i++){
+                let swatches = this.swatches[i];
+                $('#swatches').append(`
+
+                    <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
+
+                `)
+            }
+        },
+        listFeatures: function(){
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++){
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
+            }
+        }
+    },
+    {
+        style: 8719,
+        name: '1 CARGO POCKET PANT',
+        description:'From fulfilling all your heroic duties to enjoying a relaxing cup of coffee, these straight leg scrub pants are essential for keeping you comfortable during any activity.',
+        kind: 'energy',
+        features:['Straight leg with side vents','Back elastic waistband','Adjustable front waist ties','Single cargo pocket','Single back patch pocket','R: XS-3X ( 31”) | P: XS-XL (29”) | T: XS-XL (33”)'],
+        swatches:['BLAC','CARI','CEIL','CHOC','CRAL','EGPL','GLXY','HNTR','NAVY','PLUM','PWTR','REDD','ROYL','TEAL','TURQ','WINE','WHIT'],
+        listCartData: function() {
+            $('.snipcart-add-item').attr('data-item-custom1-options',`
+            ${this.swatches[0]}|${this.swatches[1]}|${this.swatches[2]}|${this.swatches[3]}|${this.swatches[4]}|${this.swatches[5]}|${this.swatches[6]}|${this.swatches[7]}|${this.swatches[8]}|${this.swatches[9]}|${this.swatches[10]}|${this.swatches[11]}|${this.swatches[12]}|${this.swatches[13]}|${this.swatches[14]}|${this.swatches[15]}|${this.swatches[16]}
+            `);
+            $('.snipcart-add-item').attr('data-item-custom2-options',this.features[this.features.length-1]);
+
+        },
+        appendSwatches: function(){
+            for (let i = 0; i < this.swatches.length; i++){
+                let swatches = this.swatches[i];
+                $('#swatches').append(`
+
+                    <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
+
+                `)
+            }
+        },
+        listFeatures: function(){
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++){
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
+            }
+        }
+    },
 ];
 
 var generateItemsHtml = function() {
@@ -517,7 +651,8 @@ var generateItemsHtml = function() {
                                         data-item-url="https://onaseer87.github.io/Ambassador/prices.html"
                                         data-item-description="${styles[i].description}"
                                         data-item-image="./assets/images/products/${styles[i].style}.jpg"
-                                        data-item-custom1-name="Select Color"        
+                                        data-item-custom1-name="Select Color" 
+                                        data-item-custom2-name="Select Fit"       
                                         >Add to Cart</button>
                                     </div>
                                 </div>
@@ -528,7 +663,7 @@ var generateItemsHtml = function() {
             `)
             styles[i].listFeatures();
             styles[i].appendSwatches();
-            styles[i].listColors();
+            styles[i].listCartData();
         }
 
     }
@@ -608,3 +743,5 @@ let thumbnailImageChange = function() {
 }
 
 thumbnailImageChange();
+
+
