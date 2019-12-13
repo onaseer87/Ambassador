@@ -38,13 +38,36 @@
 </head>
 
 <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid hidden-sm" src="assets/images/logo.png">
+                    <img class="img-fluid hidden-lg" src="assets/images/logo.png">
+    
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center text-sofia">
+                        <li class="nav-item">
+                                <div class="col-md-12 d-flex justify-content-end align-items-center p-2"><span id="snipcart-checkout"
+                                    class="p-2 text-white mr-2 snipcart-checkout"><i
+                                        class="fas fa-shopping-cart snipcart-checkout"></i></span>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                                <div class="col-md-12 d-flex justify-content-end align-items-center p-2"><button id="signout">SignOut</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <span class="text-light float-right" id="email-label"></span>
+            </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 d-flex justify-content-end align-items-center p-2"><span class="text-light"
-                    id="email-label"></span><span id="snipcart-checkout"
-                    class="p-2 text-white mr-2 snipcart-checkout"><i
-                        class="fas fa-shopping-cart snipcart-checkout"></i> Checkout</span><button id="signout">SignOut</button>
-            </div>
+            <div class="col-md-12"></div>
+
             <div class="col-md-12 text-white text-center">
                 <h1 class="text-white text-uppercase display-1 hidden-sm">Touch</h1>
                 <h1 class="text-white text-uppercase hidden-lg">Touch</h1>
