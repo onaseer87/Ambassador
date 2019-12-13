@@ -21,7 +21,7 @@ body {
     border-radius: .1rem;
     transition: all .3s ease-in-out;
 }
-.signout:hover{
+#signout:hover{
     color:#91c5c3;
     background:#444;
 }
