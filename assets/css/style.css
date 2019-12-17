@@ -43,6 +43,18 @@ button:focus {
     background: #eeee;
 
 }
+.text-sofia {
+    font-family: sofia-pro, sans-serif;
+}
+
+.text-didot-lt {
+    font-family: linotype-didot, serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.text-white {
+    color:#ffffff;
+}
 /*Swatch Colors*/
 .APPL {
     width: 1rem;

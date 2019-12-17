@@ -687,7 +687,7 @@ var generateItemsHtml = function () {
                     <div class="row">
                         <div class="col-sm-12">
                             <div>
-                                <h1 class='hidden-lg text-uppercase'>${styles[i].style}<br><small class='text-uppercase'>${styles[i].name}</small></h1>
+                                <h1 class='hidden-lg text-uppercase text-sofia'>${styles[i].style}<br><small class='text-uppercase text-sofia'>${styles[i].name}</small></h1>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -721,7 +721,7 @@ var generateItemsHtml = function () {
                                     <div id="swatches" class="col-sm-12">
                                     <br>
                                     </div>
-                                    <div class="col-md-12 mt-3 d-flex justify-content-center">
+                                    <div class="col-md-12 my-3 d-flex justify-content-center">
                                         <button class="snipcart-add-item"
                                         data-item-max-quantity="1"
                                         data-item-id="${styles[i].style}"
