@@ -31,6 +31,17 @@ var generateProducts = function (selector, style, name, ) {
 `)
 };
 
+var searchStyle = function (e) {
+    e.preventDefault();
+    let input = $('#search').val().trim();
+    for (let i = 0; i < styles.length; i++) {
+        if (styles[i].style.toString() == input) {
+            window.location.replace(`${styles[i].style}.html`)
+        } else {
+            console.log('no style found')
+        }
+    }
+}
 
 
 // Initialize Firebase
@@ -86,7 +97,7 @@ var styles = [
         description: 'Med Couture truly channeled up awesomeness with this henley scrub top. You’ll rock this relaxed fit style in comfort all day long. You can tuck it in or leave it out!',
         kind: 'touch',
         features: ['Henley neck', 'Chest patch pocket', 'Back yoke with box pleat', 'Inside contrast neckband', 'R: XS-2X (26”)'],
-        fit:['R: XS-2X (26”)'],
+        fit: ['R: XS-2X (26”)'],
         swatches: ['BLAC', 'BLUH', 'NAVY', 'SLAT'],
         sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL'],
         listCartData: function () {
@@ -123,9 +134,9 @@ var styles = [
         description: 'Simple in design, this strait leg scrub pant has rib-knit accents at the waistband and pockets. The fabric and fit are unbelievably comfortable.',
         kind: 'touch',
         features: ['Straight leg with side vents', 'Rib knit waist and pocket lining', '1 cargo pocket', 'Two back patch pockets', 'R: XS-3X (31”) P XS-XL (29”) T XS-XL (33”)'],
-        fit:['R: XS-3X (31”)','P: XS-XL (29”)','T: XS-XL (33”)'],
+        fit: ['R: XS-3X (31”)', 'P: XS-XL (29”)', 'T: XS-XL (33”)'],
         swatches: ['BLAC', 'BLUH', 'NAVY', 'ROYL', 'SLAT'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2X','3X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2X', '3X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
@@ -160,9 +171,9 @@ var styles = [
         description: "You'll love this mock wrap scrub top. With a relaxed silhouette, this v-neck top has large pockets, an accessory loop, and princess seams in the back.",
         kind: 'touch',
         features: ['Mock wrap v-neckline', 'Double-layered angled pockets', 'Accessory loop', 'Inside contrast neckband', 'Back princess seams', 'R: XS-3X (26”)'],
-        fit:['R: XS-3X (26”)'],
+        fit: ['R: XS-3X (26”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2X','3X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2X', '3X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
@@ -197,13 +208,13 @@ var styles = [
         description: "Med Couture jogger pants elevate a closet staple with an extra comfortable feel. Made from a poly blend that feels like cotton, they feature rib knit waistband and ankle cuffs.",
         kind: 'touch',
         features: ['Single cargo pocket', 'Rib knit waistband and ankle cuffs', 'Adjustable front waist ties', 'Accessory loop', 'Two back patch pockets', 'R: XS-3X (28 1/2”) P XS-XL (26 1/2”) T XS-XL (31”)'],
-        fit:['R: XS-3X (28 1/2”)','P XS-XL (26 1/2”)','T XS-XL (31”)'],
+        fit: ['R: XS-3X (28 1/2”)', 'P XS-XL (26 1/2”)', 'T XS-XL (31”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE', 'WHIT'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL','3X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
-            
+
             let fit = this.fit.join('|');
             $('.snipcart-add-item').attr('data-item-custom2-options', fit);
 
@@ -234,9 +245,9 @@ var styles = [
         description: "This classic is an industry favorite. It’s practical v-neck design and perfectly proportioned knit side panels bring style to your everyday wardrobe.",
         kind: 'touch',
         features: ['Overlapping rib knit side panels', 'Accessory loop', 'Extra accessory pocket and pen slot', 'Two large patch pockets', 'Two back patch pockets', ' Inside contrast neckband', 'R: XS-5X (27”)'],
-        fit:['R: XS-5X (27”)'],
+        fit: ['R: XS-5X (27”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE', 'WHIT'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL','3X','4X','5X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3X', '4X', '5X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
@@ -270,9 +281,9 @@ var styles = [
         description: "These lightweight strait leg scrub pants have a comfy wide waistband with internal ties. Designed for a clean, smooth fit with exceptional comfort.",
         kind: 'touch',
         features: ['Straight leg with side vents', 'Jacquard elastic and rib knit waistband', 'Internal waist ties', 'Two cargo, two back patch ', 'Two back patch pockets', 'Extra accessory pocket', 'Accessory loop', 'R: XS-5X (31”) P XS-2X (29”) T XS-XL (33”)'],
-        fit:['R: XS-5X (31”)','P XS-2X (29”)','T XS-XL (33”)'],
+        fit: ['R: XS-5X (31”)', 'P XS-2X (29”)', 'T XS-XL (33”)'],
         swatches: ['BLAC', 'BLUH', 'CEIL', 'GLXY', 'GRAP', 'NAVY', 'OLIV', 'PKPH', 'PWTR', 'ROYL', 'SLAT', 'WINE'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL','3X','4X','5X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3X', '4X', '5X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
@@ -527,13 +538,13 @@ var styles = [
         description: "This scrub top offers you a comfy and breathable fit. A v-neckline and a fun racerback design make for a classic sporty look.",
         kind: 'energy',
         features: ['Racerback knit panel', 'Front and back princess seams', 'Two large patch pockets', 'Welt accessory pocket', 'R: XS-5X (front 27” back 26”)'],
-        fit:['R: XS-5X (front 27” back 26”)'],
+        fit: ['R: XS-5X (front 27” back 26”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'CRAL', 'EGPL', 'GLXY', 'HNTR', 'NAVY', 'PLUM', 'PWTR', 'REDD', 'ROYL', 'TEAL', 'TURQ', 'WINE', 'WHIT'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL','3X','4X','5X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3X', '4X', '5X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
-            
+
             let fit = this.fit.join('|');
             $('.snipcart-add-item').attr('data-item-custom2-options', fit);
 
@@ -566,9 +577,9 @@ var styles = [
         description: "Designed for comfort and built to perform on the job and beyond! This yoga style scrub pant offers a comfortable drawstring waistband and two cargo pockets.",
         kind: 'energy',
         features: ['Boot cut leg with side vents', 'Sporty yoga knit waistband', 'Internal waist ties', 'Two welt cargo pockets', 'Two back patch pockets', 'R: XS-5X (31”) | P: XS-2X (29”) | T: XS-2X (33”)'],
-        fit:['R: XS-5X (31”)', 'P: XS-2X (29”)', 'T: XS-2X (33”)'],
+        fit: ['R: XS-5X (31”)', 'P: XS-2X (29”)', 'T: XS-2X (33”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'CRAL', 'EGPL', 'GLXY', 'HNTR', 'NAVY', 'PLUM', 'PWTR', 'REDD', 'ROYL', 'TEAL', 'TURQ', 'WINE', 'WHIT'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2X','3X','4X','5X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2X', '3X', '4X', '5X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
@@ -605,7 +616,7 @@ var styles = [
         description: "This v-neck scrub top feels sporty while exhibiting a traditional appeal. Crafted from a sleek and lightweight fabric, includes a chest pocket for expanded storage.",
         kind: 'energy',
         features: ['Chest patch pocket', 'Two large welt pockets', 'R: XS-3X ( 26”)'],
-        fit:['R: XS-3X ( 26”)'],
+        fit: ['R: XS-3X ( 26”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'CRAL', 'EGPL', 'GLXY', 'HNTR', 'NAVY', 'PLUM', 'PWTR', 'REDD', 'ROYL', 'TEAL', 'TURQ', 'WINE', 'WHIT'],
         sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3X'],
         listCartData: function () {
@@ -644,9 +655,9 @@ var styles = [
         description: 'From fulfilling all your heroic duties to enjoying a relaxing cup of coffee, these straight leg scrub pants are essential for keeping you comfortable during any activity.',
         kind: 'energy',
         features: ['Straight leg with side vents', 'Back elastic waistband', 'Adjustable front waist ties', 'Single cargo pocket', 'Single back patch pocket', 'R: XS-3X ( 31”) | P: XS-XL (29”) | T: XS-XL (33”)'],
-        fit:['R: XS-3X ( 31”)','P: XS-XL (29”)','T: XS-XL (33”)'],
+        fit: ['R: XS-3X ( 31”)', 'P: XS-XL (29”)', 'T: XS-XL (33”)'],
         swatches: ['BLAC', 'CARI', 'CEIL', 'CHOC', 'CRAL', 'EGPL', 'GLXY', 'HNTR', 'NAVY', 'PLUM', 'PWTR', 'REDD', 'ROYL', 'TEAL', 'TURQ', 'WINE', 'WHIT'],
-        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL','3X'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3X'],
         listCartData: function () {
             let swatches = this.swatches.join('|');
             $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
@@ -682,7 +693,7 @@ var styles = [
 var generateItemsHtml = function () {
     for (let i = 0; i < styles.length; i++) {
         if (style == styles[i].style) {
-            $('#view').html(`
+                $('#view').html(`
                 <div class="container p-md-5 mb-5 text-sofia">
                     <div class="row">
                         <div class="col-sm-12">
@@ -741,9 +752,9 @@ var generateItemsHtml = function () {
                     </div>
                 </div>
             `)
-            styles[i].listFeatures();
-            styles[i].appendSwatches();
-            styles[i].listCartData();
+                styles[i].listFeatures();
+                styles[i].appendSwatches();
+                styles[i].listCartData();
         }
 
     }
@@ -824,4 +835,4 @@ let thumbnailImageChange = function () {
 
 thumbnailImageChange();
 
-
+$('#search-button').on('click', searchStyle);

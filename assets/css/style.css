@@ -1,6 +1,13 @@
 body {
     background: #444;
 }
+input[type=search]{
+    border:0px;
+    border-radius: 0%;
+    width: auto !important;
+    height: auto !important;
+}
+
 #submit{
     outline: none;
     background:#91c5c3;
@@ -15,13 +22,22 @@ body {
 }
 #signout{
     outline: none;
+    background:transparent;
+    color:#ffffff;
+    border: 0;
+    border-radius: .1rem;
+}
+
+#search-button{
+    outline: none;
     background:#91c5c3;
     color:#444;
+    font-family: sofia-pro, sans-serif;
     border: 0;
     border-radius: .1rem;
     transition: all .3s ease-in-out;
 }
-#signout:hover{
+#search-button:hover{
     color:#91c5c3;
     background:#444;
 }
