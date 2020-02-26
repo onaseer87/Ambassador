@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +34,8 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
-    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="Y2ZkYzIwYzQtMjQ4OC00ZDBkLWI2MmYtMzA3MTRmZjRhOTkyNjM3MDE0NzY4Njg0NjI4ODM4"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart"
+        data-api-key="Y2ZkYzIwYzQtMjQ4OC00ZDBkLWI2MmYtMzA3MTRmZjRhOTkyNjM3MDE0NzY4Njg0NjI4ODM4"></script>
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 
 </head>
@@ -63,7 +67,7 @@
                             id="signout">SignOut</button>
                     </div>
                 </li>
-            </ul>
+            </ul>  
         </div>
     </nav>
     <div class="d-flex justify-content-end align-items-center my-2">
@@ -72,45 +76,21 @@
             <button id="search-button" class="btn my-2 my-sm-0 text-center" type="submit">Search</button>
         </form>
     </div>  
-    <div class="d-flex justify-content-end align-items-center"><span class="text-light float-right"
-            id="email-label"></span></div>
-    <div id="peaches" class="container-fluid">
+    <div class="d-flex justify-content-end align-items-center"><span class="text-light text-center float-right" id="email-label"></span></div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12"></div>
-            <div class="col-md-12 text-white text-center mt-2">
+            <div class="col-md-12 text-white text-center">
                 <h1 class="text-white text-didot-lt display-1 hidden-sm">Peaches</h1>
                 <h1 class="text-white text-didot-lt hidden-lg">Peaches</h1>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row peaches text-sofia">
-        </div>
+
+    <div id="view" class="bg-white container">
     </div>
-    <div id="touch" class="container-fluid">
-        <div class="row">
-            <div class="col-md-12"></div>
-            <div class="col-md-12 text-white text-center mt-2">
-                <h1 class="text-white text-didot-lt display-1 hidden-sm">Touch</h1>
-                <h1 class="text-white text-didot-lt hidden-lg">Touch</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row touch text-sofia">
-        </div>
-    </div>
-    <div id="energy" class="container">
-        <div class="row">
-            <div class="col-md-12 text-center text-white mt-5">
-                <h1 class="display-1 text-didot-lt hidden-sm">Energy</h1>
-                <h1 class="hidden-lg text-didot-lt">Energy</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row energy text-sofia"></div>
-    </div>
+
     <script src="./assets/js/shop.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
+</html>

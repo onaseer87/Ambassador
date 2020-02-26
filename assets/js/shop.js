@@ -54,6 +54,9 @@ firebase.auth().onAuthStateChanged(function (user) {
         var $emailLabel = $('#email-label');
         $emailLabel.text(user.email);
         for (var i = 0; i < styles.length; i++) {
+            if (styles[i].kind === 'peaches') {
+                generateProducts('.peaches', styles[i].style, styles[i].name)
+            }
             if (styles[i].kind === 'touch') {
                 generateProducts('.touch', styles[i].style, styles[i].name)
             }
@@ -91,6 +94,81 @@ console.log(style);
 
 //COLLECTIONS
 var styles = [
+    {
+        style: 8470,
+        name: 'RAGLAN TOP',
+        collection: 'peaches',
+        description: 'Med Couture has gone super sporty with this minimalistic V-neck top. Beautiful rib knit accents punctuate a flattering silhouette.',
+        kind: 'peaches',
+        features: ['Classic V neck', 'Two large welt pockets', 'Rib-knit detail', 'Side snap embellishment', 'R: XS-5X (26.5”)'],
+        swatches: ['ROYL', 'PWTR', 'PKPH', 'NAVY', 'GELO', 'CLOD', 'BLAC'],
+        fit:['R: XS-5X (26.5”)'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'],
+        listCartData: function () {
+            let swatches = this.swatches.join('|');
+            $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
+
+            let fit = this.fit.join('|');
+            $('.snipcart-add-item').attr('data-item-custom2-options', fit);
+
+            let sizes = this.sizes.join('|');
+            $('.snipcart-add-item').attr('data-item-custom3-options', sizes);
+        },
+        appendSwatches: function () {
+            for (let i = 0; i < this.swatches.length; i++) {
+                let swatches = this.swatches[i];
+                $('#swatches').append(`
+                    <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
+                `)
+            }
+        },
+        listFeatures: function () {
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++) {
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
+            }
+        }
+    },
+    {
+        style: 8721,
+        name: 'SEAMED JOGGER',
+        description: 'Level up your scrub game with these sleek joggers. An elastic waistband with an outer drawcord lets you adjust the fit. The elastic cuffs feel comfortable and relaxed.',
+        kind: 'peaches',
+        features: ['Adjustable front waist ties', 'Two cargo pockets', 'Jersey waistband and ankle cuffs', 'R: XS-3X (28.5”) P: XS-XL (26.5”) T: XS-XL (31”)'],
+        swatches: ['ROYL', 'PWTR', 'PKPH', 'NAVY', 'GELO', 'CLOD', 'BLAC'],
+        fit:['R: XS-3X (28.5”)','P: XS-XL (26.5”)', 'T: XS-XL (31”)'],
+        sizes: ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'],
+        listCartData: function () {
+            let swatches = this.swatches.join('|');
+            $('.snipcart-add-item').attr('data-item-custom1-options', swatches);
+
+            let fit = this.fit.join('|');
+            $('.snipcart-add-item').attr('data-item-custom2-options', fit);
+
+            let sizes = this.sizes.join('|');
+            $('.snipcart-add-item').attr('data-item-custom3-options', sizes);
+        },
+        appendSwatches: function () {
+            for (let i = 0; i < this.swatches.length; i++) {
+                let swatches = this.swatches[i];
+                $('#swatches').append(`
+                    <button class='${swatches} ml-2 swatches' data-color='${swatches}'></button>
+                `)
+            }
+        },
+        listFeatures: function () {
+            console.log(this.features)
+            for (let i = 0; i < this.features.length; i++) {
+                let feature = this.features[i];
+                $('#features').append(
+                    `<li>${feature}</li>`
+                )
+            }
+        }
+    },
     {
         style: 7479,
         name: 'HENLEY TOP',
